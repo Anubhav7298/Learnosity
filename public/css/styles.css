@@ -7,6 +7,8 @@
   padding: 50px;
 }
 
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -49,7 +51,8 @@ li a {
 
 .button {
   margin-right: 10px;
-
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .discribtion {
@@ -412,4 +415,59 @@ h1.padding-h1
 		position: relative;
 		background-attachment: 10px;
 	}
+}
+
+@media only screen and (max-width: 1199px) {
+  .footer-wrapper {
+    position: relative;
+    background-attachment: 10px;
+  }
+}
+
+/* .last-card
+{
+	margin-right: 0;
+	padding-right: 0;
+	margin-right: 0!important;
+} */
+
+@media only screen and (max-width: 786px) {
+  .mobile-friendly {
+    display: none;
+    position: absolute;
+  }
+  .brand-logo {
+    width: 50% !important;
+  }
+}
+
+.inlineMe {
+  display: inline;
+}
+
+@media (max-width: 786px) {
+  .card-group {
+    display: block;
+  }
+}
+
+/* carousel */
+
+#testimonials{
+
+  text-align: center;
+  background-color: #00af91;
+  color: white;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* message */
+#cta{
+  background-color: #00af91;
+  color: white;
+  text-align:center;
+  padding: 7rem;
+  margin: 7.5rem;
 }

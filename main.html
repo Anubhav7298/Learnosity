@@ -16,6 +16,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/styles.css">
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <title>Learnosity</title>
 </head>
 
@@ -25,15 +32,17 @@
   <nav class="navbar navbar-light bg-light header">
 
     <div class="container-fluid">
-      <img class='img brand-logo' src="https://www.learning.com/wp-content/uploads/2020/04/learnosity-logo.png" alt="Brand Image">
+      <img class='img brand-logo mobile-image' src="https://www.learning.com/wp-content/uploads/2020/04/learnosity-logo.png" alt="Brand Image">
       <!-- <p class='brand-moto'>Keep Learning.</p> -->
-      <ul>
-    <li><a href="#development">Development</a></li>
-    <li><a href="#design">Design</a></li>
-    <li><a href="#marketing">Marketing</a></li>
-    <li><a href="#business">Business</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#aboutus">About us</a></li>
+
+  <ul class="navbar-nav mr-auto mobile-friendly" >
+   <li id="btn" class="nav-item">
+          <a class="inlineMe" href="/#development">Development</a>
+          <a class="inlineMe" href="/#design">Design</a>
+          <a class="inlineMe" href="/#marketing">Marketing</a>
+          <a class="inlineMe" href="/#business">Business</a>
+          <a class="inlineMe" href="/#music">Music</a>
+          <a class="inlineMe" href="/#aboutus">About us</a>
   </ul>
 
 
@@ -48,32 +57,59 @@
     </div>
   </nav>
   <!-- End of Header NavBar  -->
-
   <!--Start of First Display Body -->
   <img src="images/study_together.jpg" alt="Teacher teaching." width="100%">
   <div class="container-fluid row promote">
     <div class="div-hori col-lg-6">
-      <h4>Varity of Courses</h4>
+      <i class="fas fa-book fa-5x"></i>
+      <h4 style="padding-top: 20px;">Varity of Courses</h4>
       <p>Enjoy a variety of fresh trending topics</p>
     </div>
     <div class="div-hori col-lg-6">
-      <h4>Expert Instructors</h4>
+      <i class="fas fa-chalkboard-teacher fa-5x"></i>
+      <h4 style="padding-top: 20px;">Expert Instructors</h4>
       <p>Find the right instructor for you</p>
     </div>
   </div>
   <!--End of First Display Body -->
+ <!-- start of carousel -->
+ <section id="testimonials">
 
+   <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <h2 class="heading-2" style="font-size:2vw;">I love the company but this has to be one of the worst and buggiest mainstream apps in the history of the world. Sound will randomly start playing. Other times, the player will disappear and if you open it the course will stop and go to the beginning. It's just a mess. Other times two players will be showing simultaneously and you don't know which one is actually playing. No idea how whoever heads the mobile development department here still has a job.</h2>
+         <em style="margin-left:20px; font-weight: bold; color: #374045;">Ryan McCain, New York</em>
+       </div>
+       <div class="carousel-item">
+         <h2 class="heading-2" style="font-size:2vw;">Very pleased with my purchases, the good thing is that I can keep coming back and practising over time. I run my purchases usually off a Windows laptop or Android tablet, I also play the language courses through my mobile phone (also an Android platform) and have had no issues. All my purchases have been excellent value for money too but I would advise potential customers to read up carefully before purchasing to ensure they get what they are after.</h2>
+         <em style="margin-left:20px; font-weight: bold; color: #374045;"> Beverly Andresen, Illinois</em>
+       </div>
+       <div class="carousel-item">
+         <h2 class="heading-2" style="font-size:2vw;">It's going to be as good as the courses you buy. Take your time, and make wise purchases. If you make a mistake, you have 30 days to request a refund. Had to dock one star, because if you have a $10 Google gift card, and find a class for $9.99, if you have sales tax, it will bring the price up, I n.v my case to $10.59, and it refuses to accept my gift card before charging my bank account. Not sure if this is on Udemy or Google, but perhaps this feedback will get back to somebody for fixing.</h2>
+         <em style="margin-left:20px; font-weight: bold; color: #374045;">John Kelly, Illinois</em>
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+     </a>
+   </div>
 
+ </section>
+<!-- end of carousel -->
 
   <!--Start of Second Display Body -->
   <!-- Development -->
 
-  <h1 class="padding-h1">Development</h1>
+  <h1 class="padding-h1" style="font-weight: bold">Development</h1>
 
     <!-- End of Second Display Body -->
 
     <!-- Start of Cards -->
-    <div class="card-group row " id="development">
+    <div class="card-group mb-3 " id="development">
 
       <!-- First Card -->
       <div class="card mx-3 col-md-6">
@@ -188,7 +224,7 @@
       </div>
 
       <!-- Fifth Card  -->
-      <div class="card mx-3 col-md-6">
+      <div class="card mx-3 col-md-6 last-card">
         <img src="images/dev5.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">The Complete Android N Developer Course</h5>
@@ -219,13 +255,13 @@
 
 
     <!-- second category -->
-
-    <h1 class="padding-h1">Design</h1>
+<hr>
+    <h1 class="padding-h1" style="font-weight: bold">Design</h1>
 
     <!-- End of Second Display Body -->
 
     <!-- Start of Cards -->
-    <div class="card-group row" id="design">
+    <div class="card-group mb-3" id="design">
 
       <!-- First Card -->
       <div class="card mx-3 col-md-6">
@@ -340,7 +376,7 @@
       </div>
 
       <!-- Fifth Card  -->
-      <div class="card mx-3 col-md-6">
+      <div class="card mx-3 col-md-6 last-card">
         <img src="images/des5.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Illustrator 2020 MasterClass</h5>
@@ -370,13 +406,13 @@
     <!-- End of Cards -->
 
     <!-- third category -->
-
-    <h1 class="padding-h1">Marketing</h1>
+<hr>
+    <h1 class="padding-h1" style="font-weight: bold">Marketing</h1>
 
     <!-- End of Second Display Body -->
 
     <!-- Start of Cards -->
-    <div class="card-group row" id="marketing">
+    <div class="card-group mb-3" id="marketing">
 
       <!-- First Card -->
       <div class="card mx-3 col-md-6">
@@ -491,7 +527,7 @@
       </div>
 
       <!-- Fifth Card  -->
-      <div class="card mx-3 col-md-6">
+      <div class="card mx-3 col-md-6 last-card">
         <img src="images/marr5.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Social Media Marketing MASTERY | Learn Ads on 10+ Platforms</h5>
@@ -522,12 +558,13 @@
 
     <!-- fourth category -->
 
-    <h1 class="padding-h1">Business</h1>
+<hr>
+    <h1 class="padding-h1" style="font-weight: bold">Business</h1>
 
     <!-- End of Second Display Body -->
 
     <!-- Start of Cards -->
-    <div class="card-group row" id="business">
+    <div class="card-group mb-3" id="business">
 
       <!-- First Card -->
       <div class="card mx-3 col-md-6">
@@ -642,7 +679,7 @@
       </div>
 
       <!-- Fifth Card  -->
-      <div class="card mx-3 col-md-6">
+      <div class="card mx-3 col-md-6 last-card">
         <img src="images/cor5.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">PMP Exam Prep Seminar - Pass the PMP on Your First Attempt</h5>
@@ -673,12 +710,13 @@
 
     <!-- fifth category -->
 
-    <h1 class="padding-h1">Music</h1>
+<hr>
+    <h1 class="padding-h1" style="font-weight: bold">Music</h1>
 
     <!-- End of Second Display Body -->
 
     <!-- Start of Cards -->
-    <div class="card-group row cards-last" id="music">
+    <div class="card-group mb-3 " id="music">
 
       <!-- First Card -->
       <div class="card mx-3 col-md-6">
@@ -793,7 +831,7 @@
       </div>
 
       <!-- Fifth Card  -->
-      <div class="card mx-3 col-md-6">
+      <div class="card mx-3 col-md-6 last-card">
         <img src="images/mus5.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">SINGING SIMPLIFIED #1: The Fast-Track to Singing Like a Pro</h5>
@@ -822,15 +860,21 @@
     </div>
     <!-- End of Cards -->
 
+<hr class="my-5">
 
+<!-- message -->
+<section id="cta">
 
+  <h2 class="heading-2" style="font-size:2vw;">New marketplace models, such as Learnosity, unlock the potential of experts around the world and empower them to share their knowledge with students everywhere. We’re redefining what it means to be a student and teacher. And we’re helping people anywhere gain the skills they need for the new economy.</h2>
+  <em style="margin-left:20px; font-weight: bold; color: #374045;">Jerry Smith, CEO , Learnosity</em>
 
+</section>
 
 
 
   <!--Start of  Footer -->
 
-  <div class="footer-wrapper" id="aboutus">
+  <div class="footer-wrapper " id="aboutus">
     <div class="container-fluid">
     <div class="footer-mid-part">
 
