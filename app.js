@@ -337,7 +337,12 @@ app.get("/extra/signup", function(req, res){
   res.render("signup");
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
 
-app.listen(3000, function(req, res){
-  console.log("server running on port 3000");
+app.listen(port, function(req, res){
+  console.log("server started successfully");
 });
